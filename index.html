@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        @font-face {
+            font-family: 'Banny';
+            src: url(fonts/Banny/Banny-Round.otf) format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            src: url(fonts/OpenSans/OpenSans-Regular.ttf) format('truetype');
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            src: url(fonts/OpenSans/OpenSans-Bold.ttf) format('truetype');
+            font-weight: 700;
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <div class="container">
+        <div class="home padding" id="home">
+            <div class="home__main">
+                    <header>
+                        <nav class="nav ">
+                                <div class="nav__part">
+                                    <a class="nav__text text_light" href="#home">HOME</a>
+                                    <a class="nav__text text_light" href="#about">ABOUT</a>
+                                    <a class="nav__text text_light" href="#team">TEAM</a>
+                                    <a class="nav__text text_light" href="#booking">BOOKING</a>
+                                </div>
+                                <div class="nav__rudder">
+                                    <img class="rotate-center" src="img/Vector.svg" alt="rudder">
+                                </div>
+                                <div class="nav__part">
+                                    <a class="nav__text text_light" href="#menu">MENU</a>
+                                    <a class="nav__text text_light" href="#gallery">GALERIE</a>
+                                    <a class="nav__text text_light" href="#events">EVENTS</a>
+                                    <a class="nav__text text_light" href="#contact">CONTACT</a>
+                                </div>
+                        </nav>
+                    </header>
+                    <div class="home__content">
+                        <p class="text_light small_text home__rotate">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+                        <div class="home__content-center">
+                            <h6 class="text_light home__content-heading">RESTAURANT</h6>
+                            <h1 class="text_light heading heading__name home__content-name text-focus-in">hungry people</h1>
+                            <div class="home_buttons">
+                                <button class="text_light button home__button">BOOK TABLE</button>
+                                <button class="text_light button home__button">EXPLORE</button>
+                            </div>
+                        </div>
+                        <aside class="socials">
+                            <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+                            <a href="#"><img src="img/twitter.svg" alt="twitter"></a>
+                            <a href="#"><img src="img/instagramm.svg" alt="instagramm"></a>
+                        </aside>
+                    </div>
+                    <div class="home__button-down-block">
+                        <a class="home__button-down heartbeat" href="#about"><img src="img/arrow.svg" alt="down"></a>
+
+                    </div>
+
+            </div>
+        </div>
+        
+        <main>
+            <section class="about" id="about">
+                <div class="flex_blocks padding">
+                    <div class="text_block text_block-right">
+                        <h2 class="text_dark heading heading__name-block text_block__heading">about us</h2>
+                        <h3 class="text_dark text_block__bold text_block__bold text_block__bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                        <p class="text_dark text_block__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                    <div class="image image_right">
+                        <img src="img/about_img.png" alt="about">
+                    </div>
+                </div>
+            </section>
+            
+            <section class="team content padding" id="team">
+                <div class="content__main">
+                    <h6 class="text_light content__heading">OUR TEAM</h6>
+                <div class="flex_blocks">
+                    <div class="image image_left">
+                        <img src="img/chief.png" alt="chef">
+                    </div>
+                    <div class="text_block text_block-left">
+                        <h2 class="text_light heading heading__name-block text_block__heading">MASTER CHEF</h2>
+                        <h3 class="text_light text_block__bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                        <p class="text_light text_block__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                </div>
+                </div>
+
+            </section>
+            
+            <section class="booking" id="booking">
+                <div class="flex_blocks padding">
+                    <div class="text_block text_block-right">
+                        <form class="form booking__form" action="#">
+                            <h2 class="text_dark heading heading__name-block text_block__heading booking__heading">book a table</h2>
+                            <div class="form__grid booking__grid">
+                                <input class="text_faded form__input" type="text" placeholder="Name">
+                                <input class="text_faded form__input" type="email" placeholder="Email">
+                                <input class="text_faded form__input" type="tel" placeholder="Phone">
+                                <input class="text_faded form__input" type="number" placeholder="people">
+                                <input class="text_faded form__input" type="date">
+                                <input class="text_faded form__input" type="time">
+                            </div>
+                            <button class="text_light button button_active booking__button" type="submit">BOOK NOW</button>
+                        </form>
+                    </div>
+                    <div class="image image_right">
+                        <img src="img/clock.png" alt="clock">
+                    </div>
+                </div>
+                <p class="text_faded small_text padding">Mon - Fri: <strong>8PM - 10PM</strong>, Sat - Sun: <strong>8PM - 3AM</strong>, Phone: <strong>+40 729 131 637/+40 726 458 782</strong></p>
+            </section>
+            
+            <section class="specialties content padding">
+                <div class="content__main">
+                    <h6 class="text_light content__heading"> specialties</h6>
+                <div class="flex_blocks">
+                    <div class="image image_left">
+                        <img src="img/desert.png" alt="desert">
+                    </div>
+                    <div class="text_block text_block-left">
+                        <h2 class="text_light heading heading__name-block text_block__heading">chocolate pancakes</h2>
+                        <h3 class="text_light text_block__bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                        <p class="text_light text_block__text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+                    </div>
+                </div>
+                </div>
+            </section>
+            
+            <section class="menu text_block-short padding" id="menu">
+                <h2 class="text_dark heading heading__name-block text_block__heading text_block-short__heading">DELICIOUS MENU</h2>
+                <h3 class="text_dark text_block__bold text_block-short__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                <ul class="menu__list">
+                    <li class="text_dark">SOUPE</li>
+                    <li class="text_dark">PIZZA</li>
+                    <li class="text_dark">PASTA</li>
+                    <li class="text_dark">DESERT</li>
+                    <li class="text_dark">WINE</li>
+                    <li class="text_dark">BEER</li>
+                    <li class="text_dark">DRINKS</li>
+                </ul>
+                <div class="menu__food">
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                    <div class="menu__food-block">
+                        <div class="menu__food-dish">
+                            <h5 class="text_dark heading heading__dish">PIZZA QUATRO STAGIONI  . . . .</h5>
+                            <h5 class="text_dark heading heading__dish">55,68 USD</h5>
+                        </div>
+                        <p class="menu__food-description text_faded">Integer ullamcorper neque eu purus euismod</p>
+                    </div>
+                </div>
+
+            </section>
+            
+            <section class="events content padding" id="events">
+                <div class="content__main">
+                    <h6 class="text_light content__heading">PRIVATE EVENTS</h6>
+                <div class="flex_blocks">
+                    <div class="image image_left events_block">
+                        <img src="img/weddings.png" alt="wedding">
+                        <h4 class="text_light heading heading__name-events">weddings</h4>
+                    </div>
+                    <div class="image image_right events_block">
+                        <img src="img//weddings2.png" alt="wedding">
+                        <h4 class="text_light heading heading__name-events">corporate parties</h4>
+                    </div>
+                </div>
+                <p class="text_faded-light small_text">For private events please call: <strong>+40 729 131 637/+40 726 458 782</strong> or use the contact form.</p>
+                </div>
+            </section>
+
+            <div class="gallery" id="gallery">
+                <div>
+                    <img class="gallery__image" src="img/hall1.png" alt="furnishings">
+                </div>
+                <div>
+                    <img class="gallery__image" src="img/hall2.png" alt="furnishings">
+                </div>
+                <div>
+                    <img class="gallery__image" src="img/hall3.png" alt="furnishings">
+                </div>
+                <div>
+                    <img class="gallery__image" src="img/hall4.png" alt="furnishings">
+                </div>
+            </div>
+            
+            <section class="contact text_block-short padding" id="contact">
+                <form class="form contact__form" action="#">
+                    <h2 class="text_dark heading heading__name-block heading text_block__heading text_block-short__heading">CONTACT</h2>
+                    <h3 class="text_dark text_block__bold text_block-short__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</h3>
+                    <div class="form__grid contact__grid">
+                        <input class="text_faded form__input" type="text" placeholder="Name">
+                        <input class="text_faded form__input" type="email" placeholder="Email">
+                        <input class="text_faded form__input" type="tel" placeholder="Phone">
+                        <textarea class="text_faded form__input" name="#" id="#" placeholder="Message"></textarea>
+                    </div>
+                    <div class="contact__form-bottom">
+                        <div class="contact__data">
+                            <p class="small_text text_faded"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                              </svg><strong>5th London Boulevard, U.K.</strong></p>
+    
+                            <p class="small_text text_faded"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                              </svg><strong>+40 729 131 637/+40 726 458 782</strong></p>
+        
+                            <p class="small_text text_faded"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-envelope" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                              </svg><strong>office@mindblister.com</strong></p>
+                                
+                        </div>
+                        <button class="text_light button button_active contact__button" type="submit">SEND MESSAGE</button>
+                    </div>
+                </form>
+            </section>
+            <script class="map" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0c0b8eb0d8cfab3eaa12e7b8aa4697d4b976418de5b1a0da41039cdf6f2f104c&amp;width=100%25&amp;height=475&amp;lang=ru_RU&amp;scroll=true"></script>
+        </main>
+        
+        <footer class="footer">
+            <p class="small_text">&copy;&nbsp;Copyright Mindblister 2019</p>
+        </footer>
+
+
+    </div>
+    
+</body>
+</html>
